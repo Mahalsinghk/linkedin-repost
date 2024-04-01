@@ -1,0 +1,3 @@
+[32mINFO    [0m selenium:PageLogin.py:25 first open url
+[32mINFO    [0m selenium:__init__.py:29 Go to url <https://www.linkedin.com/>
+[32mINFO    [0m selenium:PageLogin.py:29 Type email or phone number

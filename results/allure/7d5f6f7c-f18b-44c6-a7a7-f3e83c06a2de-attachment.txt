@@ -1,0 +1,7 @@
+[32mINFO    [0m selenium:PageLogin.py:25 first open url
+[32mINFO    [0m selenium:__init__.py:29 Go to url <https://www.linkedin.com/>
+[32mINFO    [0m selenium:PageLogin.py:30 Type email or phone number 
+[32mINFO    [0m selenium:PageLogin.py:34 Type password
+[32mINFO    [0m selenium:PageLogin.py:38 Click on the sign in button
+[32mINFO    [0m selenium:PageHomePage.py:23 Search Nrobo and press enter
+[32mINFO    [0m selenium:PageHomePage.py:31 Let see which inside

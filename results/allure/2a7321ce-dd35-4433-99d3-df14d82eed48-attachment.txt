@@ -1,0 +1,10 @@
+[32mINFO    [0m selenium:PageLogin.py:25 first open url
+[32mINFO    [0m selenium:__init__.py:29 Go to url <https://www.linkedin.com/>
+[32mINFO    [0m selenium:PageLogin.py:30 Type email or phone number 
+[32mINFO    [0m selenium:PageLogin.py:34 Type password
+[32mINFO    [0m selenium:PageLogin.py:38 Click on the sign in button
+[32mINFO    [0m selenium:PageHomePage.py:25 Search Nrobo and press enter
+[32mINFO    [0m selenium:PageSearch.py:18 Click on the nrobo test automation framework link
+[32mINFO    [0m selenium:PageGroup.py:23 Click on the repost button
+[32mINFO    [0m selenium:PageGroup.py:27 Click on the Repost with your throught
+[32mINFO    [0m selenium:PageGroup.py:31 Type description for repost

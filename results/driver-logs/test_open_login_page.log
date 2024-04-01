@@ -1,0 +1,687 @@
+[1711973681.664][INFO]: Starting ChromeDriver 123.0.6312.86 (9b72c47a053648d405376c5cf07999ed626728da-refs/branch-heads/6312@{#698}) on port 64581
+[1711973681.664][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1711973682.154][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--disable-blink-features=AutomationControlled" ],
+            "excludeSwitches": [ "enable-automation" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "profile.password_manager_enabled": false
+            },
+            "useAutomationExtension": false
+         },
+         "pageLoadStrategy": "normal",
+         "unhandledPromptBehavior": "ignore"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1711973682.154][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1711973682.154][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1711973682.154][INFO]: Browser search. Trying... C:\Users\chauh\.wdm\gw0\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32\chrome.exe
+[1711973682.154][INFO]: Browser search. Trying... C:\Users\chauh\.wdm\gw0\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32\chrome.exe
+[1711973682.154][INFO]: Browser search. Trying... C:\Users\chauh\.wdm\gw0\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32\chromium.exe
+[1711973682.156][INFO]: Browser search. Trying... C:\Users\chauh\AppData\Local\Google\Chrome\Application\chrome.exe
+[1711973682.156][INFO]: Browser search. Trying... C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[1711973682.156][INFO]: Browser search. Trying... C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[1711973682.156][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1711973682.156][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1711973682.157][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1711973682.157][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1711973682.158][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1711973682.158][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1711973682.158][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-blink-features=AutomationControlled --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\windows\SystemTemp\scoped_dir324_2069715909" data:,
+[1711973682.798][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1711973682.807][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "123.0.6312.86",
+      "chrome": {
+         "chromedriverVersion": "123.0.6312.86 (9b72c47a053648d405376c5cf07999ed626728da-refs/branch-heads/6312@{#698})",
+         "userDataDir": "C:\\windows\\SystemTemp\\scoped_dir324_2069715909"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:64584"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "ignore",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "c1bba85ee85247f7235211d48d0049f1"
+}
+[1711973682.808][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+}
+[1711973682.808][INFO]: Waiting for pending navigations...
+[1711973682.814][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.819][INFO]: Waiting for pending navigations...
+[1711973682.821][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.821][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteScript null
+[1711973682.823][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteCDP {
+   "cmd": "Network.setUserAgentOverride",
+   "params": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+   }
+}
+[1711973682.823][INFO]: Waiting for pending navigations...
+[1711973682.824][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.826][INFO]: Waiting for pending navigations...
+[1711973682.827][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.827][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteCDP {
+}
+[1711973682.830][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return navigator.userAgent;"
+}
+[1711973682.830][INFO]: Waiting for pending navigations...
+[1711973682.831][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.839][INFO]: Waiting for pending navigations...
+[1711973682.841][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.841][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteScript "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+[1711973682.842][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteCDP {
+   "cmd": "Network.setUserAgentOverride",
+   "params": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+   }
+}
+[1711973682.842][INFO]: Waiting for pending navigations...
+[1711973682.844][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.845][INFO]: Waiting for pending navigations...
+[1711973682.846][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.846][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteCDP {
+}
+[1711973682.848][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return navigator.userAgent;"
+}
+[1711973682.848][INFO]: Waiting for pending navigations...
+[1711973682.850][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.856][INFO]: Waiting for pending navigations...
+[1711973682.857][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.857][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteScript "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[1711973682.864][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1711973682.865][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SetTimeouts
+[1711973682.866][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1711973682.866][INFO]: Waiting for pending navigations...
+[1711973682.867][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.873][INFO]: Waiting for pending navigations...
+[1711973682.874][INFO]: Done waiting for pending navigations. Status: ok
+[1711973682.874][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteScript "complete"
+[1711973682.877][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND Navigate {
+   "url": "https://www.linkedin.com/"
+}
+[1711973682.877][INFO]: Waiting for pending navigations...
+[1711973682.879][INFO]: Done waiting for pending navigations. Status: ok
+[1711973683.400][INFO]: Waiting for pending navigations...
+[1711973684.463][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.463][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE Navigate
+[1711973684.464][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindows {
+}
+[1711973684.464][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindows [ "64F92A9D225F96B96188E3D3064AB304" ]
+[1711973684.466][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindow {
+}
+[1711973684.467][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindow "64F92A9D225F96B96188E3D3064AB304"
+[1711973684.468][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973684.469][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973684.470][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetTitle {
+}
+[1711973684.470][INFO]: Waiting for pending navigations...
+[1711973684.507][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.540][INFO]: Waiting for pending navigations...
+[1711973684.541][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.541][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetTitle "LinkedIn: Log In or Sign Up"
+[1711973684.542][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973684.544][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973684.545][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND MaximizeWindow {
+}
+[1711973684.545][INFO]: Waiting for pending navigations...
+[1711973684.546][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.657][INFO]: Waiting for pending navigations...
+[1711973684.673][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.673][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE MaximizeWindow {
+   "height": 832,
+   "width": 1552,
+   "x": -8,
+   "y": -8
+}
+[1711973684.675][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#session_key"
+}
+[1711973684.675][INFO]: Waiting for pending navigations...
+[1711973684.677][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.696][INFO]: Waiting for pending navigations...
+[1711973684.697][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.697][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.6"
+}
+[1711973684.700][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#session_key"
+}
+[1711973684.700][INFO]: Waiting for pending navigations...
+[1711973684.702][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.711][INFO]: Waiting for pending navigations...
+[1711973684.713][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.713][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.6"
+}
+[1711973684.714][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND TypeElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.6",
+   "text": "8200952714",
+   "value": [ "8200952714" ]
+}
+[1711973684.714][INFO]: Waiting for pending navigations...
+[1711973684.715][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.834][INFO]: Waiting for pending navigations...
+[1711973684.845][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.845][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE TypeElement
+[1711973684.846][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#session_password"
+}
+[1711973684.847][INFO]: Waiting for pending navigations...
+[1711973684.852][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.871][INFO]: Waiting for pending navigations...
+[1711973684.874][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.874][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.7"
+}
+[1711973684.875][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#session_password"
+}
+[1711973684.875][INFO]: Waiting for pending navigations...
+[1711973684.876][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.881][INFO]: Waiting for pending navigations...
+[1711973684.881][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.881][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.7"
+}
+[1711973684.883][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND TypeElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.7",
+   "text": "Passw0rd@84",
+   "value": [ "Passw0rd@84" ]
+}
+[1711973684.883][INFO]: Waiting for pending navigations...
+[1711973684.884][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.970][INFO]: Waiting for pending navigations...
+[1711973684.982][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.982][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE TypeElement
+[1711973684.983][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "button[data-id='sign-in-form__submit-btn']"
+}
+[1711973684.983][INFO]: Waiting for pending navigations...
+[1711973684.984][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.993][INFO]: Waiting for pending navigations...
+[1711973684.994][INFO]: Done waiting for pending navigations. Status: ok
+[1711973684.994][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.15"
+}
+[1711973684.995][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "button[data-id='sign-in-form__submit-btn']"
+}
+[1711973684.995][INFO]: Waiting for pending navigations...
+[1711973684.996][INFO]: Done waiting for pending navigations. Status: ok
+[1711973685.000][INFO]: Waiting for pending navigations...
+[1711973685.001][INFO]: Done waiting for pending navigations. Status: ok
+[1711973685.001][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.15"
+}
+[1711973685.002][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ClickElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.F0279C52A9E05E18F095807359CF6F48.e.15"
+}
+[1711973685.002][INFO]: Waiting for pending navigations...
+[1711973685.002][INFO]: Done waiting for pending navigations. Status: ok
+[1711973685.047][INFO]: Waiting for pending navigations...
+[1711973690.279][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.279][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ClickElement
+[1711973690.280][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindows {
+}
+[1711973690.280][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindows [ "64F92A9D225F96B96188E3D3064AB304" ]
+[1711973690.281][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindow {
+}
+[1711973690.281][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindow "64F92A9D225F96B96188E3D3064AB304"
+[1711973690.282][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973690.282][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973690.283][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetTitle {
+}
+[1711973690.283][INFO]: Waiting for pending navigations...
+[1711973690.283][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.308][INFO]: Waiting for pending navigations...
+[1711973690.308][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.308][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetTitle "(2) Feed | LinkedIn"
+[1711973690.309][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973690.310][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973690.312][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1711973690.312][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SetTimeouts
+[1711973690.313][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1711973690.313][INFO]: Waiting for pending navigations...
+[1711973690.336][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.384][INFO]: Waiting for pending navigations...
+[1711973690.385][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.385][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteScript "complete"
+[1711973690.387][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[placeholder='Search']"
+}
+[1711973690.387][INFO]: Waiting for pending navigations...
+[1711973690.421][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.437][INFO]: Waiting for pending navigations...
+[1711973690.440][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.440][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.43"
+}
+[1711973690.440][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[placeholder='Search']"
+}
+[1711973690.440][INFO]: Waiting for pending navigations...
+[1711973690.444][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.454][INFO]: Waiting for pending navigations...
+[1711973690.455][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.455][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.43"
+}
+[1711973690.456][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND TypeElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.43",
+   "text": "nrobo",
+   "value": [ "nrobo" ]
+}
+[1711973690.456][INFO]: Waiting for pending navigations...
+[1711973690.474][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.562][INFO]: Waiting for pending navigations...
+[1711973690.569][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.569][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE TypeElement
+[1711973690.570][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@role='listbox']//div//div"
+}
+[1711973690.570][INFO]: Waiting for pending navigations...
+[1711973690.574][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.595][INFO]: Waiting for pending navigations...
+[1711973690.602][INFO]: Done waiting for pending navigations. Status: ok
+[1711973690.602][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='listbox']//div//div"}
+  (Session info: chrome=123.0.6312.86)
+[1711973691.107][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@role='listbox']//div//div"
+}
+[1711973691.107][INFO]: Waiting for pending navigations...
+[1711973691.113][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.124][INFO]: Waiting for pending navigations...
+[1711973691.124][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.124][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.80"
+}
+[1711973691.126][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@role='listbox']//div//div"
+}
+[1711973691.126][INFO]: Waiting for pending navigations...
+[1711973691.127][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.137][INFO]: Waiting for pending navigations...
+[1711973691.138][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.138][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.80"
+}
+[1711973691.139][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ClickElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.80"
+}
+[1711973691.139][INFO]: Waiting for pending navigations...
+[1711973691.140][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.191][INFO]: Waiting for pending navigations...
+[1711973691.263][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.263][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ClickElement
+[1711973691.265][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindows {
+}
+[1711973691.265][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindows [ "64F92A9D225F96B96188E3D3064AB304" ]
+[1711973691.266][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindow {
+}
+[1711973691.266][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindow "64F92A9D225F96B96188E3D3064AB304"
+[1711973691.267][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973691.268][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973691.269][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetTitle {
+}
+[1711973691.269][INFO]: Waiting for pending navigations...
+[1711973691.520][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.536][INFO]: Waiting for pending navigations...
+[1711973691.538][INFO]: Done waiting for pending navigations. Status: ok
+[1711973691.538][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetTitle "(2) Search | LinkedIn"
+[1711973691.539][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973691.540][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973694.542][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1711973694.543][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SetTimeouts
+[1711973694.543][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1711973694.543][INFO]: Waiting for pending navigations...
+[1711973694.544][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.548][INFO]: Waiting for pending navigations...
+[1711973694.549][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.549][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteScript "complete"
+[1711973694.550][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='nRoBo Test Automation Framework']"
+}
+[1711973694.550][INFO]: Waiting for pending navigations...
+[1711973694.550][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.556][INFO]: Waiting for pending navigations...
+[1711973694.557][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.557][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.112"
+}
+[1711973694.557][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='nRoBo Test Automation Framework']"
+}
+[1711973694.557][INFO]: Waiting for pending navigations...
+[1711973694.558][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.561][INFO]: Waiting for pending navigations...
+[1711973694.562][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.562][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.112"
+}
+[1711973694.563][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ClickElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.112"
+}
+[1711973694.563][INFO]: Waiting for pending navigations...
+[1711973694.563][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.630][INFO]: Waiting for pending navigations...
+[1711973694.635][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.635][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ClickElement
+[1711973694.636][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindows {
+}
+[1711973694.637][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindows [ "64F92A9D225F96B96188E3D3064AB304" ]
+[1711973694.638][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindow {
+}
+[1711973694.638][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindow "64F92A9D225F96B96188E3D3064AB304"
+[1711973694.639][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973694.641][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973694.643][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetTitle {
+}
+[1711973694.643][INFO]: Waiting for pending navigations...
+[1711973694.646][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.659][INFO]: Waiting for pending navigations...
+[1711973694.659][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.660][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetTitle "(2) Groups | LinkedIn"
+[1711973694.661][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973694.661][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973694.663][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1711973694.663][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SetTimeouts
+[1711973694.664][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1711973694.664][INFO]: Waiting for pending navigations...
+[1711973694.664][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.666][INFO]: Waiting for pending navigations...
+[1711973694.667][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.667][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ExecuteScript "complete"
+[1711973694.668][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Repost']/.."
+}
+[1711973694.668][INFO]: Waiting for pending navigations...
+[1711973694.669][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.678][INFO]: Waiting for pending navigations...
+[1711973694.679][INFO]: Done waiting for pending navigations. Status: ok
+[1711973694.679][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Repost']/.."}
+  (Session info: chrome=123.0.6312.86)
+[1711973695.234][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Repost']/.."
+}
+[1711973695.234][INFO]: Waiting for pending navigations...
+[1711973695.274][INFO]: Done waiting for pending navigations. Status: ok
+[1711973695.340][INFO]: Waiting for pending navigations...
+[1711973695.343][INFO]: Done waiting for pending navigations. Status: ok
+[1711973695.343][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Repost']/.."}
+  (Session info: chrome=123.0.6312.86)
+[1711973695.845][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Repost']/.."
+}
+[1711973695.845][INFO]: Waiting for pending navigations...
+[1711973695.846][INFO]: Done waiting for pending navigations. Status: ok
+[1711973695.852][INFO]: Waiting for pending navigations...
+[1711973695.853][INFO]: Done waiting for pending navigations. Status: ok
+[1711973695.853][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Repost']/.."}
+  (Session info: chrome=123.0.6312.86)
+[1711973696.354][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Repost']/.."
+}
+[1711973696.354][INFO]: Waiting for pending navigations...
+[1711973696.355][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.363][INFO]: Waiting for pending navigations...
+[1711973696.363][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.363][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.133"
+}
+[1711973696.364][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Repost']/.."
+}
+[1711973696.364][INFO]: Waiting for pending navigations...
+[1711973696.365][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.370][INFO]: Waiting for pending navigations...
+[1711973696.370][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.370][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.133"
+}
+[1711973696.371][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ClickElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.133"
+}
+[1711973696.371][INFO]: Waiting for pending navigations...
+[1711973696.372][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.413][INFO]: Waiting for pending navigations...
+[1711973696.439][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.439][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ClickElement
+[1711973696.441][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindows {
+}
+[1711973696.445][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindows [ "64F92A9D225F96B96188E3D3064AB304" ]
+[1711973696.445][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindow {
+}
+[1711973696.445][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindow "64F92A9D225F96B96188E3D3064AB304"
+[1711973696.446][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973696.451][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973696.452][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetTitle {
+}
+[1711973696.452][INFO]: Waiting for pending navigations...
+[1711973696.454][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.457][INFO]: Waiting for pending navigations...
+[1711973696.457][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.458][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetTitle "(2) nRoBo Test Automation Framework | Groups | LinkedIn"
+[1711973696.458][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973696.459][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973696.460][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Repost with your thoughts']/.."
+}
+[1711973696.460][INFO]: Waiting for pending navigations...
+[1711973696.461][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.472][INFO]: Waiting for pending navigations...
+[1711973696.472][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.472][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.135"
+}
+[1711973696.473][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Repost with your thoughts']/.."
+}
+[1711973696.473][INFO]: Waiting for pending navigations...
+[1711973696.474][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.493][INFO]: Waiting for pending navigations...
+[1711973696.504][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.504][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.135"
+}
+[1711973696.505][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND ClickElement {
+   "id": "f.64F92A9D225F96B96188E3D3064AB304.d.06CE54F3556CFEA47E6EFF86939F5FD7.e.135"
+}
+[1711973696.505][INFO]: Waiting for pending navigations...
+[1711973696.509][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.598][INFO]: Waiting for pending navigations...
+[1711973696.607][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.607][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE ClickElement
+[1711973696.608][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindows {
+}
+[1711973696.608][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindows [ "64F92A9D225F96B96188E3D3064AB304" ]
+[1711973696.610][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetWindow {
+}
+[1711973696.610][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetWindow "64F92A9D225F96B96188E3D3064AB304"
+[1711973696.611][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973696.612][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973696.612][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND GetTitle {
+}
+[1711973696.612][INFO]: Waiting for pending navigations...
+[1711973696.622][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.629][INFO]: Waiting for pending navigations...
+[1711973696.629][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.629][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE GetTitle "(2) nRoBo Test Automation Framework | Groups | LinkedIn"
+[1711973696.631][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND SwitchToWindow {
+   "handle": "64F92A9D225F96B96188E3D3064AB304"
+}
+[1711973696.633][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE SwitchToWindow
+[1711973696.635][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND Screenshot {
+}
+[1711973696.635][INFO]: Waiting for pending navigations...
+[1711973696.635][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.760][INFO]: Waiting for pending navigations...
+[1711973696.761][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.761][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAAB4AAAAOQCAYAAADYO2xOAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3dlzHOeZ7/nvm5m1Yd9BAiRAkRRAUhRJWzRlUk23Wr7zOY6JMxFnYsbn5sRRtOV2/z9utR3qu/bNXHRMeKKnI+bY4bFaVJNNqbmZC8QVBEESG7HVXpnvXFQVU..."
+[1711973696.770][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND Screenshot {
+}
+[1711973696.770][INFO]: Waiting for pending navigations...
+[1711973696.773][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.896][INFO]: Waiting for pending navigations...
+[1711973696.897][INFO]: Done waiting for pending navigations. Status: ok
+[1711973696.897][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAAB4AAAAOQCAYAAADYO2xOAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3dlvHPm55vlvROTKZHLJ5E6KlCgVKalUkuySpZLqyKdO+c7dRqMH6MGMz0W3UWj/Uw3Dp9HdvpmLxsCDMw1M2/BMnVId6ahsSSWXRGqnSIpbUsw9comIuciFy..."
+[1711973696.905][INFO]: [c1bba85ee85247f7235211d48d0049f1] COMMAND Quit {
+}
+[1711973696.998][INFO]: [c1bba85ee85247f7235211d48d0049f1] RESPONSE Quit

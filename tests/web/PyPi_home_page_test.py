@@ -4,6 +4,10 @@
 """
 import pytest
 from pages.PagePyPiHome import PagePyPiHome
+from pages.Linkedin.PageLogin import PageLogin
+from pages.Linkedin.PageHomePage import PageHomePage
+from pages.Linkedin.PageSearch import PageSearch
+from pages.Linkedin.PageGroup import PageGroup
 
 
 class TestPyPiHomePage():
@@ -58,3 +62,26 @@ class TestPyPiHomePage():
     @pytest.mark.skip(reason="Wanted to skip it for easy demonstration")
     def test_this_will_fail_for_sure(self, driver, logger):
         raise Exception("Must fail")
+
+    @pytest.mark.sanity
+    def test_search_nrobo_and_repost_latest_post(self, driver, logger):
+        page_login = PageLogin(driver, logger)
+        page_login.open()
+        page_login.type_email_or_phone()
+        page_login.type_password()
+        page_login.click_on_sign_in_button()
+        page_login.click_on_verify_button()
+        page_login.select_verified_()
+
+        #this object for linkedin homepage
+        page_home_page = PageHomePage(driver, logger)
+        page_home_page.type_nrobo_search_field()
+
+        page_search = PageSearch(driver, logger)
+        page_search.click_nrobo_test_automation_framework()
+
+        page_group = PageGroup(driver, logger)
+        page_group.click_on_repost_button()
+        page_group.click_on_repost_with_your_throught()
+        page_group.type_description_for_repost()
+
