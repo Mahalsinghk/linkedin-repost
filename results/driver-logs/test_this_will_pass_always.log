@@ -1,0 +1,211 @@
+[1711961574.912][INFO]: Starting ChromeDriver 123.0.6312.86 (9b72c47a053648d405376c5cf07999ed626728da-refs/branch-heads/6312@{#698}) on port 52086
+[1711961574.912][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1711961575.405][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--disable-blink-features=AutomationControlled" ],
+            "excludeSwitches": [ "enable-automation" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "profile.password_manager_enabled": false
+            },
+            "useAutomationExtension": false
+         },
+         "pageLoadStrategy": "normal",
+         "unhandledPromptBehavior": "ignore"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1711961575.405][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1711961575.405][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1711961575.405][INFO]: Browser search. Trying... C:\Users\chauh\.wdm\gw0\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32\chrome.exe
+[1711961575.405][INFO]: Browser search. Trying... C:\Users\chauh\.wdm\gw0\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32\chrome.exe
+[1711961575.405][INFO]: Browser search. Trying... C:\Users\chauh\.wdm\gw0\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32\chromium.exe
+[1711961575.408][INFO]: Browser search. Trying... C:\Users\chauh\AppData\Local\Google\Chrome\Application\chrome.exe
+[1711961575.408][INFO]: Browser search. Trying... C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[1711961575.408][INFO]: Browser search. Trying... C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[1711961575.408][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1711961575.408][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1711961575.409][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1711961575.410][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1711961575.410][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1711961575.410][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1711961575.413][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-blink-features=AutomationControlled --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\windows\SystemTemp\scoped_dir19904_1464256033" data:,
+[1711961576.169][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1711961576.179][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "123.0.6312.86",
+      "chrome": {
+         "chromedriverVersion": "123.0.6312.86 (9b72c47a053648d405376c5cf07999ed626728da-refs/branch-heads/6312@{#698})",
+         "userDataDir": "C:\\windows\\SystemTemp\\scoped_dir19904_1464256033"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:52089"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "ignore",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "b8fd0d2bd1ffb26241afa0a8bafea9fe"
+}
+[1711961576.181][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+}
+[1711961576.181][INFO]: Waiting for pending navigations...
+[1711961576.183][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.188][INFO]: Waiting for pending navigations...
+[1711961576.189][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.189][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE ExecuteScript null
+[1711961576.190][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND ExecuteCDP {
+   "cmd": "Network.setUserAgentOverride",
+   "params": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+   }
+}
+[1711961576.190][INFO]: Waiting for pending navigations...
+[1711961576.191][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.193][INFO]: Waiting for pending navigations...
+[1711961576.194][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.194][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE ExecuteCDP {
+}
+[1711961576.195][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return navigator.userAgent;"
+}
+[1711961576.195][INFO]: Waiting for pending navigations...
+[1711961576.196][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.198][INFO]: Waiting for pending navigations...
+[1711961576.199][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.199][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE ExecuteScript "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+[1711961576.200][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND ExecuteCDP {
+   "cmd": "Network.setUserAgentOverride",
+   "params": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+   }
+}
+[1711961576.200][INFO]: Waiting for pending navigations...
+[1711961576.200][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.201][INFO]: Waiting for pending navigations...
+[1711961576.201][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.201][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE ExecuteCDP {
+}
+[1711961576.202][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return navigator.userAgent;"
+}
+[1711961576.202][INFO]: Waiting for pending navigations...
+[1711961576.202][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.204][INFO]: Waiting for pending navigations...
+[1711961576.204][INFO]: Done waiting for pending navigations. Status: ok
+[1711961576.204][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE ExecuteScript "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[1711961576.208][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND Navigate {
+   "url": "https://google.com"
+}
+[1711961576.208][INFO]: Waiting for pending navigations...
+[1711961576.209][INFO]: Done waiting for pending navigations. Status: ok
+[1711961577.066][INFO]: Waiting for pending navigations...
+[1711961577.066][INFO]: Done waiting for pending navigations. Status: ok
+[1711961577.066][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE Navigate
+[1711961577.078][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND Screenshot {
+}
+[1711961577.078][INFO]: Waiting for pending navigations...
+[1711961578.593][INFO]: Done waiting for pending navigations. Status: ok
+[1711961578.682][INFO]: Waiting for pending navigations...
+[1711961578.683][INFO]: Done waiting for pending navigations. Status: ok
+[1711961578.683][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABQ8AAANuCAYAAAC4wf9qAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xl8VPW9//H3mZlMVhLIQgKEEMK+7yKgiLjgBu5tUUq1rddatWrxtvb2d72t2mpVFBdcqq1Wa7VuKKiIIqKWXfY1LGEJW/Z9mZmz/P5IMhAYICAhiXk9H488y..."
+[1711961578.686][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND Screenshot {
+}
+[1711961578.686][INFO]: Waiting for pending navigations...
+[1711961578.687][INFO]: Done waiting for pending navigations. Status: ok
+[1711961578.761][INFO]: Waiting for pending navigations...
+[1711961578.766][INFO]: Done waiting for pending navigations. Status: ok
+[1711961578.766][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABQ8AAANuCAYAAAC4wf9qAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xl8VPW9//H3mZlMVhLIQgKEEMK+7yKgiLjgBu5tUUq1rddatWrxtvb2d72t2mpVFBdcqq1Wa7VuKKiIIqKWXfY1LGEJW/Z9mZmz/P5IMhAYICAhiXk9H488y..."
+[1711961578.771][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] COMMAND Quit {
+}
+[1711961578.805][INFO]: [b8fd0d2bd1ffb26241afa0a8bafea9fe] RESPONSE Quit

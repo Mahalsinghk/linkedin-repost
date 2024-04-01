@@ -1,0 +1,6 @@
+setting up <Function test_fullpagescreenshot_nrobo_switch>
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+Wait for page load...
+End of Wait for page load...
+Go to url <https://namasteydigitalindia.com>

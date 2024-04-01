@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">Test Automation Report</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">Test Automation Report</h1>
+    <p>Report generated on 01-Apr-2024 at 14:23:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">5 tests took 00:00:38.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">5 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" />
+            <span class="skipped">81 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.0&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.22631-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.0.0&#34;, &#34;pluggy&#34;: &#34;1.4.0&#34;}, &#34;Plugins&#34;: {&#34;allure-pytest&#34;: &#34;2.13.2&#34;, &#34;Faker&#34;: &#34;24.4.0&#34;, &#34;emoji&#34;: &#34;0.2.0&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;rerunfailures&#34;: &#34;13.0&#34;, &#34;xdist&#34;: &#34;3.5.0&#34;}}, &#34;tests&#34;: {&#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_must_a_failure&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_must_a_failure::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_must_a_failure::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\PyPi_home_page_test.py&amp;#x27;, 11, &amp;#x27;Skipped: Test is not yet complete&amp;#x27;)\n&#34;}], &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_this_will_pass_always&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;Image&#34;, &#34;format_type&#34;: &#34;image&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_this_will_pass_always_2024-04-01_1422_8622.png&#34;, &#34;mime_type&#34;: &#34;image/png&#34;, &#34;extension&#34;: &#34;png&#34;}, {&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_this_will_pass_always_2024-04-01_1422_8622.png&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_this_will_pass_always&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_this_will_pass_always&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_this_will_pass_always_2024-04-01_1422_8622.png\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n\n---------------------------- Captured stdout setup -----------------------------\nsetting up &amp;lt;Function test_this_will_pass_always&amp;gt;\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\n\n------------------------------ Captured log call -------------------------------\nINFO     selenium:PyPi_home_page_test.py:20 this test will pass always\n\n&#34;}], &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_pass_app_name_from_commandline&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_pass_app_name_from_commandline::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_pass_app_name_from_commandline::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\PyPi_home_page_test.py&amp;#x27;, 23, &amp;#x27;Skipped: unconditional skip&amp;#x27;)\n&#34;}], &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_pass_url_username_password_from_commandline_example&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_pass_url_username_password_from_commandline_example::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_pass_url_username_password_from_commandline_example::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\PyPi_home_page_test.py&amp;#x27;, 28, &amp;#x27;Skipped: unconditional skip&amp;#x27;)\n&#34;}], &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_google_branding_displayed_on_home_page&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;Image&#34;, &#34;format_type&#34;: &#34;image&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_google_branding_displayed_on_home_page_2024-04-01_1423_8464.png&#34;, &#34;mime_type&#34;: &#34;image/png&#34;, &#34;extension&#34;: &#34;png&#34;}, {&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_google_branding_displayed_on_home_page_2024-04-01_1423_8464.png&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_google_branding_displayed_on_home_page&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_google_branding_displayed_on_home_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_google_branding_displayed_on_home_page_2024-04-01_1423_8464.png\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n\n---------------------------- Captured stdout setup -----------------------------\nsetting up &amp;lt;Function test_google_branding_displayed_on_home_page&amp;gt;\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\n\n------------------------------ Captured log setup ------------------------------\nDEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `C:\\Users\\chauh\\.wdm\\gw0\\drivers\\chromedriver\\win64\\123.0.6312.86\\chromedriver-win32/chromedriver.exe` in a child process with pid: 7132 using 0 to output -3\n\n----------------------------- Captured stdout call -----------------------------\nWait for page load...\nEnd of Wait for page load...\nGo to url &amp;lt;https://pypi.org/&amp;gt;\n\n------------------------------ Captured log call -------------------------------\nINFO     selenium:PagePyPiHome.py:38 Open url: https://pypi.org/\nINFO     selenium:__init__.py:29 Go to url &amp;lt;https://pypi.org/&amp;gt;\n\n&#34;}], &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_nrobo_package_is_available_on_pypi_org&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;Image&#34;, &#34;format_type&#34;: &#34;image&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_nrobo_package_is_available_on_pypi_org_2024-04-01_1423_8053.png&#34;, &#34;mime_type&#34;: &#34;image/png&#34;, &#34;extension&#34;: &#34;png&#34;}, {&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_nrobo_package_is_available_on_pypi_org_2024-04-01_1423_8053.png&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_nrobo_package_is_available_on_pypi_org&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_nrobo_package_is_available_on_pypi_org&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;screenshots\\tests_web_PyPi_home_page_test_TestPyPiHomePage_test_nrobo_package_is_available_on_pypi_org_2024-04-01_1423_8053.png\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n\n---------------------------- Captured stdout setup -----------------------------\nsetting up &amp;lt;Function test_nrobo_package_is_available_on_pypi_org&amp;gt;\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\n\n------------------------------ Captured log setup ------------------------------\nDEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `C:\\Users\\chauh\\.wdm\\gw0\\drivers\\chromedriver\\win64\\123.0.6312.86\\chromedriver-win32/chromedriver.exe` in a child process with pid: 10856 using 0 to output -3\n\n----------------------------- Captured stdout call -----------------------------\nWait for page load...\nEnd of Wait for page load...\nGo to url &amp;lt;https://pypi.org/&amp;gt;\nWait for page load...\nEnd of Wait for page load...\n\n------------------------------ Captured log call -------------------------------\nINFO     selenium:PagePyPiHome.py:38 Open url: https://pypi.org/\nINFO     selenium:__init__.py:29 Go to url &amp;lt;https://pypi.org/&amp;gt;\nINFO     selenium:PagePyPiHome.py:45 Type search keyword: nrobo\nINFO     selenium:PagePyPiHome.py:49 Click on Search button.\nINFO     selenium:PageSearch.py:16 Check if nrobo link is available.\n\n&#34;}], &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_this_will_fail_for_sure&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_this_will_fail_for_sure::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/PyPi_home_page_test.py::TestPyPiHomePage::test_this_will_fail_for_sure::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\PyPi_home_page_test.py&amp;#x27;, 57, &amp;#x27;Skipped: Wanted to skip it for easy demonstration&amp;#x27;)\n&#34;}], &#34;tests/web/gui/PyPi_home_page_test.py::TestPyPiHomePage::test_google_branding_displayed_on_home_page&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;Image&#34;, &#34;format_type&#34;: &#34;image&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_gui_PyPi_home_page_test_TestPyPiHomePage_test_google_branding_displayed_on_home_page_2024-04-01_1423_6551.png&#34;, &#34;mime_type&#34;: &#34;image/png&#34;, &#34;extension&#34;: &#34;png&#34;}, {&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_gui_PyPi_home_page_test_TestPyPiHomePage_test_google_branding_displayed_on_home_page_2024-04-01_1423_6551.png&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/web/gui/PyPi_home_page_test.py::TestPyPiHomePage::test_google_branding_displayed_on_home_page&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/gui/PyPi_home_page_test.py::TestPyPiHomePage::test_google_branding_displayed_on_home_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;screenshots\\tests_web_gui_PyPi_home_page_test_TestPyPiHomePage_test_google_branding_displayed_on_home_page_2024-04-01_1423_6551.png\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n\n---------------------------- Captured stdout setup -----------------------------\nsetting up &amp;lt;Function test_google_branding_displayed_on_home_page&amp;gt;\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\n\n------------------------------ Captured log setup ------------------------------\nDEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `C:\\Users\\chauh\\.wdm\\gw0\\drivers\\chromedriver\\win64\\123.0.6312.86\\chromedriver-win32/chromedriver.exe` in a child process with pid: 9128 using 0 to output -3\n\n----------------------------- Captured stdout call -----------------------------\nWait for page load...\nEnd of Wait for page load...\nGo to url &amp;lt;https://pypi.org/&amp;gt;\n\n------------------------------ Captured log call -------------------------------\nINFO     selenium:PagePyPiHome.py:38 Open url: https://pypi.org/\nINFO     selenium:__init__.py:29 Go to url &amp;lt;https://pypi.org/&amp;gt;\n\n&#34;}], &#34;tests/web/gui/PyPi_home_page_test.py::TestPyPiHomePage::test_fullpagescreenshot_nrobo_switch&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;Image&#34;, &#34;format_type&#34;: &#34;image&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_gui_PyPi_home_page_test_TestPyPiHomePage_test_fullpagescreenshot_nrobo_switch_2024-04-01_1423_2841.png&#34;, &#34;mime_type&#34;: &#34;image/png&#34;, &#34;extension&#34;: &#34;png&#34;}, {&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;screenshots\\tests_web_gui_PyPi_home_page_test_TestPyPiHomePage_test_fullpagescreenshot_nrobo_switch_2024-04-01_1423_2841.png&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/web/gui/PyPi_home_page_test.py::TestPyPiHomePage::test_fullpagescreenshot_nrobo_switch&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/gui/PyPi_home_page_test.py::TestPyPiHomePage::test_fullpagescreenshot_nrobo_switch&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;screenshots\\tests_web_gui_PyPi_home_page_test_TestPyPiHomePage_test_fullpagescreenshot_nrobo_switch_2024-04-01_1423_2841.png\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n\n---------------------------- Captured stdout setup -----------------------------\nsetting up &amp;lt;Function test_fullpagescreenshot_nrobo_switch&amp;gt;\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\n\n------------------------------ Captured log setup ------------------------------\nDEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `C:\\Users\\chauh\\.wdm\\gw0\\drivers\\chromedriver\\win64\\123.0.6312.86\\chromedriver-win32/chromedriver.exe` in a child process with pid: 20800 using 0 to output -3\n\n----------------------------- Captured stdout call -----------------------------\nWait for page load...\nEnd of Wait for page load...\nGo to url &amp;lt;https://namasteydigitalindia.com&amp;gt;\n\n------------------------------ Captured log call -------------------------------\nINFO     selenium:__init__.py:29 Go to url &amp;lt;https://namasteydigitalindia.com&amp;gt;\n\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_action_chain_methods.py::TestActionChainMethods::test_action_chain_reference&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_action_chain_methods.py::TestActionChainMethods::test_action_chain_reference::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_action_chain_methods.py::TestActionChainMethods::test_action_chain_reference::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_action_chain_methods.py&amp;#x27;, 9, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_accept_alert&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_accept_alert::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_accept_alert::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_alert_methods.py&amp;#x27;, 9, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_dismiss_alert&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_dismiss_alert::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_dismiss_alert::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_alert_methods.py&amp;#x27;, 25, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_send_keys_to_prompt&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_send_keys_to_prompt::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_send_keys_to_prompt::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_alert_methods.py&amp;#x27;, 41, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_get_alert_text&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_get_alert_text::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_alert_methods.py::TestAlertMethods::test_example_get_alert_text::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_alert_methods.py&amp;#x27;, 58, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_get_tag_name_of_element&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_get_tag_name_of_element::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_get_tag_name_of_element::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 9, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_get_text_of_element&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_get_text_of_element::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_get_text_of_element::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 20, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_click_method&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_click_method::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_click_method::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 31, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_click_and_wait_method&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_click_and_wait_method::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_click_and_wait_method::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 47, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_element_to_be_clickable&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_element_to_be_clickable::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_element_to_be_clickable::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 57, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_submit&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_submit::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_submit::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 67, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_is_displayed&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_is_displayed::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_is_displayed::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 88, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_location_once_scrolled_into_view&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_location_once_scrolled_into_view::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_location_once_scrolled_into_view::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 98, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_size&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_size::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_size::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 111, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_value_of_css_property&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_value_of_css_property::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_value_of_css_property::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 121, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_location_&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_location_::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_location_::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 131, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_rect_&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_rect_::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_rect_::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 141, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_aria_role&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_aria_role::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_aria_role::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 151, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_accessible_name&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_accessible_name::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_accessible_name::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 161, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_base64&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_base64::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_base64::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 171, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_png&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_png::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_png::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 184, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_file&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_file::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_element_wrapper_methods.py::TestWebElementWrapperMethods::test_screenshot_as_file::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_element_wrapper_methods.py&amp;#x27;, 197, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_open_an_url&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_open_an_url::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_open_an_url::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 12, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_browser_name&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_browser_name::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_browser_name::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 20, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_title_of_the_current_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_title_of_the_current_page::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_title_of_the_current_page::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 27, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_url_of_the_current_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_url_of_the_current_page::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_url_of_the_current_page::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 35, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_page_source_of_the_current_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_page_source_of_the_current_page::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_page_source_of_the_current_page::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 43, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_close_a_window_from_several_open_windows&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_close_a_window_from_several_open_windows::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_close_a_window_from_several_open_windows::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 51, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_quit_all_windows&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_quit_all_windows::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_quit_all_windows::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 72, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_current_window_handle&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_current_window_handle::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_current_window_handle::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 88, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_window_handles&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_window_handles::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_window_handles::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 99, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_maximize_window&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_maximize_window::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_maximize_window::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 118, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_fullscreen_mode&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_fullscreen_mode::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_fullscreen_mode::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 125, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_minimize_window&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_minimize_window::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_minimize_window::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 134, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_print_page_and_save_as_pdf&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_print_page_and_save_as_pdf::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_print_page_and_save_as_pdf::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 143, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_active_element&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_active_element::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_active_element::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 154, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_accept_alert&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_accept_alert::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_accept_alert::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 164, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_working_with_frames&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_working_with_frames::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_working_with_frames::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 180, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_parent_frame&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_parent_frame::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_parent_frame::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 217, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_new_window&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_new_window::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_switch_to_new_window::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 248, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_back_action&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_back_action::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_back_action::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 271, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_forward_action&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_forward_action::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_forward_action::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 286, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_refresh_action&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_refresh_action::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_browser_refresh_action::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 303, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_cookies&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_cookies::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_cookies::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 318, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_add_cookie&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_add_cookie::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_add_cookie::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 339, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_delete_cookie&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_delete_cookie::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_delete_cookie::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 355, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_delete_all_cookiee&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_delete_all_cookiee::setup&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_delete_all_cookiee::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 368, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_implicitly_wait&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_implicitly_wait::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_implicitly_wait::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 381, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_script_timeout&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_script_timeout::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_script_timeout::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 394, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_page_load_timeout&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_page_load_timeout::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_page_load_timeout::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 403, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_timeouts&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_timeouts::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_all_timeouts::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 412, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_all_timeouts&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_all_timeouts::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_all_timeouts::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 423, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_findelement&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_findelement::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_findelement::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 438, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_findelementssss&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_findelementssss::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_findelementssss::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 449, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_capabilities&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_capabilities::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_capabilities::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 465, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_file&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_file::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_file::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 474, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_png&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_png::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_png::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 483, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_base64&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_base64::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_screenshot_as_base64::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 495, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_size&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_size::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_size::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 507, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_window_size&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_window_size::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_window_size::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 519, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_position&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_position::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_position::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 528, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_rect&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_rect::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_set_window_rect::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 538, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_log_types&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_log_types::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_log_types::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 548, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_log&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_log::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_methods.py::TestNRoBoSeleniumWrapperMethods::test_get_log::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_methods.py&amp;#x27;, 557, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_page_to_be_loaded&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_page_to_be_loaded::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_page_to_be_loaded::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_wait_methods.py&amp;#x27;, 9, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_a_while&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_a_while::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_a_while::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_wait_methods.py&amp;#x27;, 18, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_element_to_be_invisible&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_element_to_be_invisible::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_nrobo_wait_methods.py::TestNroboWaitMethods::test_wait_for_element_to_be_invisible::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_nrobo_wait_methods.py&amp;#x27;, 27, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_all_select_options&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_all_select_options::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_all_select_options::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 9, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_all_selected_options&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_all_selected_options::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_all_selected_options::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 27, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_first_selected_options&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_first_selected_options::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_get_first_selected_options::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 49, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_value_from_a_dropdown&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_value_from_a_dropdown::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_value_from_a_dropdown::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 69, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_index_from_a_dropdown&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_index_from_a_dropdown::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_index_from_a_dropdown::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 87, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_visible_text_from_a_dropdown&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_visible_text_from_a_dropdown::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_select_an_option_by_visible_text_from_a_dropdown::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 105, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_all_options_from_a_dropdown&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_all_options_from_a_dropdown::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_all_options_from_a_dropdown::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 123, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_value_from_a_dropdown&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_value_from_a_dropdown::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_value_from_a_dropdown::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 145, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_index_from_a_dropdown&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_index_from_a_dropdown::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_index_from_a_dropdown::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 167, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}], &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_visible_text_from_a_dropdown&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_visible_text_from_a_dropdown::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/web/selenium_wrapper_nrobo_methods/test_select.py::TestSelect::test_deselect_by_visible_text_from_a_dropdown::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.12.0 D:\\LinkedinRepost\\.venv\\Scripts\\python.exe\n(&amp;#x27;D:\\\\LinkedinRepost\\\\tests\\\\web\\\\selenium_wrapper_nrobo_methods\\\\test_select.py&amp;#x27;, 189, &amp;#x27;Skipped: This test is an nRoBo example test.&amp;#x27;)\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;Test Automation Report&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
