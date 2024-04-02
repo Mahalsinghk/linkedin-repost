@@ -70,7 +70,9 @@ class TestPyPiHomePage():
         page_login.type_email_or_phone()
         page_login.type_password()
         page_login.click_on_sign_in_button()
+        page_login.switch_iframe()
         page_login.click_on_verify_button()
+        page_login.switch_iframe()
         page_login.select_verified_()
 
         #this object for linkedin homepage

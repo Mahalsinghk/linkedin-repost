@@ -20,14 +20,12 @@ class PageLogin(Page):
 
     btn_sign_in = (By.CSS_SELECTOR, "button[data-id='sign-in-form__submit-btn']")
     btn_verify = (By.XPATH, "//button[@id='home_children_button']")
-    select_li_for_verify = (By.XPATH, "//ul//li[@id='image4']")
+    select_li_for_verify = (By.XPATH, "//div//ul//li[@id='image4']/a")
     iframe_first = (By.XPATH, "//iframe[@id='captcha-internal']")
     iframe_second = (By.XPATH, "//iframe[@id='arkoseframe']")
     iframe_third = (By.XPATH, "//iframe[@data-e2e='enforcement-frame']")
     iframe_four = (By.XPATH, "//iframe[@id='fc-iframe-wrap']")
     iframe_five = (By.XPATH, "//iframe[@id='CaptchaFrame']")
-
-
 
     def open(self):
         self.logger.info("first open url")
@@ -46,8 +44,8 @@ class PageLogin(Page):
         self.logger.info("Click on the sign in button")
         self.click(*self.btn_sign_in)
 
-    def click_on_verify_button(self):
-        self.logger.info("Click on the verify button")
+    def switch_iframe(self):
+
         self.wait_for_a_while(8)
         # switch first frame
         self.frame("captcha-internal")
@@ -66,6 +64,8 @@ class PageLogin(Page):
         self.logger.info("switch five iframe")
         self.frame("CaptchaFrame")
 
+    def click_on_verify_button(self):
+        self.logger.info("Click on the verify button")
         self.click(*self.btn_verify)
 
     def select_verified_(self):
