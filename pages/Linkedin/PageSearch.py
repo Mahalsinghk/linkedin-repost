@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from pages import Page
+import random
 
 class PageSearch(Page):
     """Page class for PyPi.org home page"""
@@ -13,8 +14,12 @@ class PageSearch(Page):
 
         # other initialization may proceed after this
 
+    random_wait_list = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    new_number = random.choice(random_wait_list)
+
     lnk_nrobo_framework_text = (By.XPATH, "//a[text()='nRoBo Test Automation Framework']")
     def click_nrobo_test_automation_framework(self):
+        self.wait_for_a_while(self.new_number)
         self.logger.info("Click on the nrobo test automation framework link")
         self.click(*self.lnk_nrobo_framework_text)
 

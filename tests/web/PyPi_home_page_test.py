@@ -70,20 +70,22 @@ class TestPyPiHomePage():
         page_login.type_email_or_phone()
         page_login.type_password()
         page_login.click_on_sign_in_button()
-        page_login.switch_iframe()
-        page_login.click_on_verify_button()
-        page_login.switch_iframe()
-        page_login.select_verified_()
 
         #this object for linkedin homepage
         page_home_page = PageHomePage(driver, logger)
         page_home_page.type_nrobo_search_field()
 
+        #this object for search page
         page_search = PageSearch(driver, logger)
         page_search.click_nrobo_test_automation_framework()
 
+        #this object for paggroup
         page_group = PageGroup(driver, logger)
         page_group.click_on_repost_button()
         page_group.click_on_repost_with_your_throught()
         page_group.type_description_for_repost()
+        # page_group.click_on_post_button()
+        page_group.click_on_the_view_profile_for_group()
+        page_group.select_group_in_post_setting_popup()
+        page_group.select_group_one_by_one_in_select_group_popup()
 

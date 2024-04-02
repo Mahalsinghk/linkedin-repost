@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from pages import Page
+import random
 
 class PageLogin(Page):
     """Page class for PyPi.org home page"""
@@ -27,6 +28,8 @@ class PageLogin(Page):
     iframe_four = (By.XPATH, "//iframe[@id='fc-iframe-wrap']")
     iframe_five = (By.XPATH, "//iframe[@id='CaptchaFrame']")
 
+    random_wait_list = [2,3,4,5,6,7,8,9,10,11,12]
+    new_number = random.choice(random_wait_list)
     def open(self):
         self.logger.info("first open url")
         self.get("https://www.linkedin.com/")
@@ -34,13 +37,15 @@ class PageLogin(Page):
 
     def type_email_or_phone(self):
         self.logger.info("Type email or phone number ")
-        self.send_keys(*self.txt_email_or_phone, "8200952714")
+        self.send_keys(*self.txt_email_or_phone, "mahalsinghchauhan@gmail.com")
 
     def type_password(self):
+        self.wait_for_a_while(self.new_number)
         self.logger.info("Type password")
-        self.send_keys(*self.txt_password, "Passw0rd@84")
+        self.send_keys(*self.txt_password, "Mahal123@123")
 
     def click_on_sign_in_button(self):
+        self.wait_for_a_while(self.new_number)
         self.logger.info("Click on the sign in button")
         self.click(*self.btn_sign_in)
 
