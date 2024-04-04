@@ -15,6 +15,7 @@ class PageLogin(Page):
         # other initialization may proceed after this
 
     # Page locators definition should go here
+    random_number = random.randint(1, 6)
     url = "https://www.linkedin.com/"
     txt_email_or_phone = (By.CSS_SELECTOR, "#session_key")
     txt_password = (By.CSS_SELECTOR, "#session_password")
@@ -28,8 +29,7 @@ class PageLogin(Page):
     iframe_four = (By.XPATH, "//iframe[@id='fc-iframe-wrap']")
     iframe_five = (By.XPATH, "//iframe[@id='CaptchaFrame']")
 
-    random_wait_list = [2,3,4,5,6,7,8,9,10,11,12]
-    new_number = random.choice(random_wait_list)
+
     def open(self):
         self.logger.info("first open url")
         self.get("https://www.linkedin.com/")
@@ -40,12 +40,12 @@ class PageLogin(Page):
         self.send_keys(*self.txt_email_or_phone, "mahalsinghchauhan@gmail.com")
 
     def type_password(self):
-        self.wait_for_a_while(self.new_number)
+        self.wait_for_a_while(self.random_number)
         self.logger.info("Type password")
         self.send_keys(*self.txt_password, "Mahal123@123")
 
     def click_on_sign_in_button(self):
-        self.wait_for_a_while(self.new_number)
+        self.wait_for_a_while(self.random_number)
         self.logger.info("Click on the sign in button")
         self.click(*self.btn_sign_in)
 

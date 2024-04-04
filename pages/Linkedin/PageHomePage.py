@@ -20,16 +20,16 @@ class PageHomePage(Page):
     txt_suggestion = (By.XPATH, "//div[@id='triggered-expanded-ember12']")
     select_div = (By.XPATH, "//div[@role='listbox']//div//div")
 
-    random_wait_list = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    new_number = random.choice(random_wait_list)
+    random_number = random.randint(1, 6)
 
 
     def type_nrobo_search_field(self):
-        self.wait_for_a_while(self.new_number)
+        self.wait_for_a_while(self.random_number)
         self.logger.info("Search Nrobo and press enter")
         self.send_keys(*self.txt_search, "nRoBo Test Automation Framework")
+        self.wait_for_a_while(self.random_number)
         self.all_elements = self.find_elements(*self.select_div)
         self.all_elements[0].click()
-        self.wait_for_a_while(self.new_number)
+        self.wait_for_a_while(self.random_number)
 
 

@@ -105,10 +105,11 @@ class TestPyPiHomePage():
 
         #this object for paggroup
         page_group = PageGroup(driver, logger)
-        page_group.click_on_share_button()
+        page_group.click_on_repost_button()
         page_group.click_on_repost_with_your_throught()
         page_group.type_description_for_repost()
         page_group.click_on_the_view_profile_for_group()
         page_group.select_group_in_post_setting_popup()
-        page_group.select_group_one_by_one_in_select_group_popup()
+        # page_group.select_group_one_by_one_in_select_group_popup()
+        page_group.select_groups_and_repost()
 
