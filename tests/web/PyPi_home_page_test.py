@@ -8,7 +8,7 @@ from pages.Linkedin.PageLogin import PageLogin
 from pages.Linkedin.PageHomePage import PageHomePage
 from pages.Linkedin.PageSearch import PageSearch
 from pages.Linkedin.PageGroup import PageGroup
-
+from nrobo.util.common import Common
 
 class TestPyPiHomePage():
 
@@ -105,11 +105,26 @@ class TestPyPiHomePage():
 
         #this object for paggroup
         page_group = PageGroup(driver, logger)
-        page_group.click_on_repost_button()
+        page_group.click_on_share_button()
         page_group.click_on_repost_with_your_throught()
         page_group.type_description_for_repost()
         page_group.click_on_the_view_profile_for_group()
         page_group.select_group_in_post_setting_popup()
+        group_names = page_group.group_names()
+        page_group.wait_for_a_while(Common.generate_random_numbers(2,5))
         # page_group.select_group_one_by_one_in_select_group_popup()
-        page_group.select_groups_and_repost()
+        exclude_group_names = ['nRoBo Test Automation Framework']
+        for inx,group_name in enumerate(group_names):
+
+            if group_name in exclude_group_names:
+                continue
+            page_group.select_group_by_text_and_save(group_name)
+            page_group.click_on_post_button()
+            page_group.wait_for_a_while(Common.generate_random_numbers(3, 7))
+            page_group.click_on_share_button()
+            page_group.click_on_repost_with_your_throught()
+            page_group.type_description_for_repost()
+            page_group.click_on_the_view_profile_for_group()
+            page_group.select_group_in_post_setting_popup()
+
 

@@ -8,6 +8,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from pages import Page
 import yaml
 import random
+from nrobo.util.common import Common
 
 class PageGroup(Page):
     """Page class for PyPi.org home page"""
@@ -81,94 +82,29 @@ class PageGroup(Page):
         self.wait_for_a_while(self.random_number)
         self.click(*self.chk_group_for_post)
 
-    # def select_group_one_by_one_in_select_group_popup(self):
-    #     self.logger.info("Select group one by one in the select group popup")
-    #     self.wait_for_a_while(self.random_number)
-    #     self.select_all_group = self.find_elements(*self.rdo_select_groups)
-    #
-    #     for x in range(len(self.select_all_group)):
-    #         self.groups = self.find_elements(*self.rdo_select_groups)
-    #         group_name = self.select_all_group[x].text
-    #         self.logger.info(f"this is text:{group_name}")
-    #         self.select_all_group[x].click()
-    #         if group_name == "nRoBo Test Automation Framework":
-    #             self.logger.info("nrobo is match")
-    #             continue
-    #
-    #         self.wait_for_a_while(self.random_number)
-    #         self.logger.info(f"click on the save button{x}")
-    #         self.click(*self.btn_save_group)
-    #         self.wait_for_a_while(self.random_number)
-    #         self.logger.info("click on the done button")
-    #         self.click(*self.btn_done_group)
-    #         self.logger.info("click on the Post button")
-    #         self.wait_for_a_while(self.random_number)
-    #         self.click_on_post_button()
-    #         self.wait_for_a_while(self.random_number)
-    #         self.logger.info("Again click on the share button")
-    #         self.click_on_repost_button()
-    #         self.wait_for_a_while(self.random_number)
-    #         self.logger.info("Again click on the repost throught")
-    #         self.click_on_repost_with_your_throught()
-    #         self.wait_for_a_while(self.random_number)
-    #         self.logger.info("Again enter description")
-    #         self.type_description_for_repost()
-    #         self.wait_for_a_while(self.random_number)
-    #         self.logger.info("Again click on the repost throught")
-    #         self.click_on_the_view_profile_for_group()
-    #         self.wait_for_a_while(self.random_number)
-    #         self.logger.info("Again click on the repost throught")
-    #         self.select_group_in_post_setting_popup()
-    #         self.wait_for_a_while(self.random_number)
-
-    def select_groups_and_repost(self):
-        self.logger.info("Select group one by one in the select group popup")
-        self.wait_for_a_while(self.random_number)
+    def group_names(self):
         groups = self.find_elements(*self.rdo_select_groups)
-        self.click(*self.btn_back)
-        self.logger.info("go to the back")
-        self.wait_for_a_while(self.random_number)
-        self.click(*self.btn_back)
-        self.wait_for_a_while(self.random_number)
-        self.click(*self.btn_cross_icon)
-        self.wait_for_a_while(self.random_number)
-        self.click(*self.btn_discard)
-        for index in range(len(groups)):
-            self.wait_for_a_while(self.random_number)
-            self.click_on_repost_button()
-            self.click_on_repost_with_your_throught()
-            self.type_description_for_repost()
-            self.wait_for_a_while(self.random_number)
-            self.click_on_the_view_profile_for_group()
-            self.wait_for_a_while(self.random_number)
-            self.select_group_in_post_setting_popup()
+        names = []
+        for group in groups:
+            names.append(group.text)
+        return names
 
-            groups = self.find_elements(*self.rdo_select_groups)
-            groups[index].click()
-            groups_name = groups[index].text
-            if groups_name == "nRoBo Test Automation Framework":
-                self.wait_for_a_while(self.random_number)
-                self.click(*self.btn_back)
-                self.wait_for_a_while(self.random_number)
-                self.click(*self.btn_cross_icon)
-                self.wait_for_a_while(self.random_number)
-                self.click(*self.btn_discard)
-                continue
+    def select_group_by_text_and_save(self, group_name):
+        group_element_xpath = f'//fieldset//span[text()="{group_name}"]'
 
-            self.wait_for_a_while(self.random_number)
-            self.click(*self.btn_back)
-            self.wait_for_a_while(self.random_number)
-            self.click(*self.btn_cross_icon)
-            self.wait_for_a_while(self.random_number)
-            self.click(*self.btn_discard)
-            # self.click(*self.btn_save_group)
-            # self.wait_for_a_while(self.random_number)
-            # self.click(*self.btn_done_group)
-            # self.wait_for_a_while(self.random_number)
-            # self.click(*self.btn_post)
-            # self.click_on_repost_button()
-            # self.click_on_repost_with_your_throught()
-            # self.type_description_for_repost()
+        group_element_by_name = self.find_element(By.XPATH, group_element_xpath)
+
+        self.wait_for_a_while(1)
+        group_element_by_name.click()
+
+        self.wait_for_a_while(1)
+        self.click(*self.btn_save_group) if self.is_enabled(*self.btn_save_group) else self.click(*self.btn_back)
+        self.wait_for_a_while(1)
+        self.click(*self.btn_done_group)
+
+    
+
+
 
 
 
